@@ -1,0 +1,24 @@
+/** Replace this file with your own CSS :) **/
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #59585e;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome {
+    padding: 20px;
+    text-align: center;
+}
+
+.browser-message {
+    display: none;
+}

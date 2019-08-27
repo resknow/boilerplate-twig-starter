@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    {% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
+
+    {# Stylesheets #}
+    {% for stylesheet in get_stylesheets() %}
+    <link rel="stylesheet" href="{{ stylesheet }}">
+    {% endfor %}
+
+    <link rel="shortcut icon" type="image/png" href="{{ assets_dir }}/images/icons/favicon.png">
+
+    {% do head %}
+
+</head>
+<body class="{% if page.index.1 %}base--{{ page.index.0 }}{% endif %} page page--{{ page.slug }}" itemscope itemtype="http://schema.org/WebPage">
+
+    {% include 'partials/browser-update.twig' %}

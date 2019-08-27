@@ -1,0 +1,10 @@
+    {% include 'partials/analytics.twig' %}
+
+    {% for script in get_scripts() %}
+    <script src="{{ script }}"></script>
+    {% endfor %}
+
+    {{ footer() }}
+
+</body>
+</html>
